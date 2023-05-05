@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!--meta tags-->        
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        
+<!--page Title-->
+<title>Beyond Kind - ABOUT US</title>
+
+<link rel="icon" type="image" href="https://i.postimg.cc/xCnvrRpg/logo20.jpg"/>
+    
+<!--stylesheet link-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+
+<!--animation (AOS - Animation on scroll) link-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+
+<!--flickity css crousel link-->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+
+     
+<!-- custom add-ons -->
+    <link rel="stylesheet" type="text/css" href="add.css" />
+    <script src="/FrontEnd/owl.carousel/owl.carousel.min.js"></script>
+    <link href="/FrontEnd/boxicons/css/boxicons.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/FrontEnd/fontawesome/css/all.css" />
+
+    <!-----------STYLE.CSS FILE ------------------------>
+
+<style>
+.Ourwork{
+  font-size: 1.35em;
+  text-align: justify;
+  font-family: 'Times New Roman', Times, serif
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  body {
+    width: 100%;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  color: #222;
+}
+/* utility class*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #444444;
+}
+
+a {
+  color: #009970;
+}
+
+a:hover {
+  color: #009970;
+  text-decoration: none;
+}
+/*------------------top button css---------------------------*/
+#topbtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        border: 1px solid #009970;
+        outline: none;
+        background-color: white ;
+        color: #009970;
+        cursor: pointer;
+        border-radius: 50%;
+        font-size: 18px;
+      }
+      #topbtn:hover{
+        background-color: #009970;
+        color: #fff;
+      }
+/*------------- ABout us page css ---------------------*/
+/*header image*/
+
+#header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://images.unsplash.com/photo-1542810634-71277d95dcbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+  background-position: center;
+  background-size: cover;
+}
+.header-box {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.header-box h1 {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  margin: 10px;
+}
+/*smoothing scroll */
+* {
+  scroll-behavior: smooth;
+}
+
+/*scroll bar effect*/
+::-webkit-scrollbar {
+  width: 12px;
+  background: #f6f6f7;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #009970;
+}
+
+/*about us cover */
+.about-cover-img {
+  height: 750px;
+  background-image: url("https://images.unsplash.com/photo-1542810634-71277d95dcbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*about us heading text*/
+.about h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+}
+.green-hr {
+  width: 50px;
+  display: block;
+  height: 2px;
+  background: #009970;
+}
+
+/*green cards  */
+.about .icon-box {
+  text-align: center;
+  padding: 40px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #009970;
+}
+
+.about .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.about .icon-box h4 a {
+  color: #fff;
+  transition: ease-in-out 0.3s;
+}
+
+.white-hr {
+  width: 50px;
+  display: block;
+  height: 2px;
+  background: #fff;
+}
+
+.about .icon-box p {
+  font-size: 20px;
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.about .icon-box:hover {
+  border-color: #009970;
+  box-shadow: 0px 0 25px 0 black;
+}
+
+.about .icon-box:hover h4 a {
+  color: #fff;
+}
+
+.carousel-cell {
+  width: 100%; /* full width */
+  height: 450px;
+}
+
+@media screen and (min-width: 768px) {
+  /* half-width cells for larger devices */
+  .carousel-cell {
+    width: 33%;
+  }
+}
+.about-name {
+  padding-top: 10px;
+}
+
+/*flip card part*/
+
+.about-flip-card {
+  perspective: 1000px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.about-flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid #009970;
+  background-color: #009970;
+}
+
+.about-flip-card:hover .about-flip-card-inner {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.about-flip-card-front,
+.about-flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.about-flip-card-front {
+  font-variant: small-caps;
+  color: black;
+}
+
+.about-flip-card-back {
+  color: black;
+  transform: rotateY(180deg);
+  padding: 10px;
+  text-align: justify;
+  font-variant: small-caps;
+}
+
+[class*='col-'] {
+  padding: 1rem;
+}
+
+/*------------- ABout us page css end---------------------*/
+/* ----------------------------------------------------------------------------------------------------------------- */
+/*--------------------------Donation page css-----------*/
+
+/*Donation cover */
+.donation-head{
+  background-color: beige;
+}
+.donation h2 {
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  text-align: center;
+}
+.donation {
+  width: 60px;
+  display: block;
+  height: 2px;
+  background: #009970;
+}
+
+/*form part*/
+#internshipform{
+  width: 350px;
+}
+
+
+.donation label {
+  font-size: 20px;
+  font-weight: bold;
+}
+.donation input,
+#donation-option,
+.donation textarea {
+  border: 1px solid #000;
+  background-color: gainsboro;
+}
+/*resume upload button style*/
+.donation input[type='file']::-webkit-file-upload-button {
+  font-size: small;
+  color: #009970;
+  font-weight: bold;
+  background-color: white;
+  border:1px solid #009970;
+  border-radius: 5px;
+}
+.donation input[type='file']::-ms-browse  {
+  font-size: small;
+  color: #009970;
+  font-weight: bold;
+  background-color: white;
+  border:1px solid #009970;
+  border-radius: 5px;
+}
+.donation input[type='file']::-webkit-file-upload-button:hover {
+  color: white;
+  background-color:#009970;
+}
+.donation input:focus,
+#donation-option:focus,
+.donation textarea:focus {
+  box-shadow: 2px 2px 2px 2px #009970 !important ;
+}
+.donation button {
+  border-color: #009970 !important ;
+  color: #009970 !important;
+  font-weight: bold;
+}
+.donation button:hover {
+  background-color: #009970 !important ;
+  color: #fff !important;
+}
+
+/*--------------------------Donation page css end-----------*/
+
+/* Donation Perks css start*/
+.cover-img {
+  height: 750px;
+  background-image: url(images/main.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.img {
+  width: 100%;
+  height: 50%;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-caption h1 {
+  font-size: 250%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #000;
+}
+
+.carousel-caption h3 {
+  font-size: 200%;
+  font-weight: 100;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
+}
+
+.btn {
+  font-size: 90%;
+}
+
+.btn-primary {
+  background-color: #009970;
+  border: 1px solid #009970;
+}
+
+.btn-primary:hover {
+  background-color: #ffff;
+  border: 1px solid #009970;
+  color: #009970;
+}
+
+.jumbotron {
+  padding: 1rem;
+  border-radius: 0;
+}
+
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.fa-money {
+  color: red;
+}
+.fa-university {
+  color: #562d7c;
+}
+.fa-times {
+  color: #2163af;
+}
+.fa-money,
+.fa-university,
+.fa-times {
+  font-size: 4em;
+  margin: 1rem;
+}
+
+.fun {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.gif {
+  max-width: 100%;
+}
+
+.img1 {
+  width: 330px;
+  padding: 10px;
+  filter: grayscale(0);
+  transition: 1s;
+  display: inline-block;
+}
+.img1:hover {
+  opacity: 0.5;
+}
+
+.content {
+  position: absolute;
+  font-size: 0px;
+  top: 45%;
+  left: 50%;
+}
+
+.content btn2 {
+  position: absolute;
+  padding: 10px 10px;
+  display: block;
+}
+.content span:nth-child(4) {
+  top: 0;
+  left: -50%;
+  width: 50%;
+  height: 1pxl;
+  background: linear-gradient(90deg, trasparent, black);
+}
+.content:hover span:nth-child(4) {
+  left: 50%;
+  transition: 1s;
+}
+
+.anim:hover > .content {
+  font-size: 30px;
+  font-family: unset;
+  text-align: center;
+  padding: 10px 10px;
+  top: 35%;
+  left: 34%;
+  display: block;
+  position: absolute;
+  color: white;
+  background: black;
+  box-shadow: 0 0 10px black, 0 0 40px black, 0 0 80px black;
+  transition: 1s;
+}
+
+.anim:hover > .content btn2 {
+  font-size: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+.card-img-top1 {
+  height: 165px;
+}
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f6f6f7;
+}
+
+.section-title {
+  padding-bottom: 30px;
+  
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #009970;
+  bottom: 0;
+  left: 0;
+}
+.section-title-new h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #009970;
+  bottom: 0;
+  left: 511px;
+}
+
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+.services .icon-box {
+  text-align: center;
+  padding: 40px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+}
+
+.services .icon-box .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  border-radius: 50px;
+  border: 1px solid #009970;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: ease-in-out 0.3s;
+  color: #009970;
+}
+
+.services .icon-box .icon i {
+  font-size: 28px;
+}
+
+.services .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.services .icon-box h4 a {
+  color: #36343a;
+  transition: ease-in-out 0.3s;
+}
+
+.services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 20px 0 rgba(0, 0, 0, 0.9);
+}
+
+.services .icon-box:hover h4 a {
+  color: #009970;
+}
+
+.services .icon-box:hover .icon {
+  color: #fff;
+  background: #009970;
+}
+
+hr.light {
+  border-top: 1px solid white;
+  width: 75%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+/* donation css ends */
+hr.light-100 {
+  border-top: 1px solid white;
+  width: 100%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0 !important;
+}
+
+/* Donation Perks css ends */
+/* ----------------------------------------------------------------------------------------------------------------- */
+/*---------------NGO list css----------------------*/
+.donate-btn{
+  border-color: #009970 !important ;
+  color: white !important;
+  font-weight: bold;
+  background-color: #009970;
+}
+
+.donate-btn:hover {
+  background-color: white !important ;
+  color: #009970 !important;
+}
+/*donation form part*/
+.donation form{
+  width: 350px;
+}
+.donation .container{
+  box-shadow: 10px 20px 20px #777777;
+}
+.donation h4 {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+}
+.donation-green-hr {
+  width: 20%;
+  display: block;
+  height: 2px;
+  background: #009970;
+}
+.donation label {
+  font-size: 20px;
+  font-weight: bold;
+}
+.donation input,
+#donation-option
+{
+  border: 1px solid #000;
+  background-color: gainsboro;
+}
+
+.donation input:focus,
+#donation-option:focus{
+  box-shadow: 2px 2px 2px 2px #009970 !important ;
+}
+.donation button {
+  border-color: #009970 !important ;
+  color: #009970 !important;
+  font-weight: bold;
+}
+.donation button:hover {
+  background-color: #009970 !important ;
+  color: #fff !important;
+}
+/*---------------ngo list css end---------*/
+
+/*Profile page css*/
+/*details part*/
+.contact h2 {
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  text-align: center;
+}
+.contact-green-hr {
+  width: 60px;
+  display: block;
+  height: 2px;
+  background: #009970;
+}
+.contact a {
+  color: #009970;
+  font-weight: bold;
+}
+.contact-h4 {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+}
+.line {
+  border: 1.2px solid #000;
+}
+/*form part*/
+.contact label {
+  font-size: 20px;
+  font-weight: bold;
+}
+.contact input,
+.contact textarea {
+  border: 1px solid #000;
+  background-color: gainsboro;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  box-shadow: 2px 2px 2px 2px #009970 !important ;
+}
+.contact button {
+  border-color: #009970 !important ;
+  color: #009970 !important;
+  font-weight: bold;
+}
+.contact button:hover {
+  background-color: #009970 !important ;
+  color: #fff !important;
+}
+/*social media part*/
+.social-icon {
+  font-size: 3.2em;
+  text-align: center;
+}
+
+.sm-bttn {
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: #f1f1f1;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  overflow: hidden;
+  position: relative;
+}
+.sm-bttn i {
+  line-height: 90px;
+  font-size: 24px;
+  transition: 0.2s linear;
+}
+
+.sm-bttn:hover .fa-facebook-f {
+  transform: scale(1.3);
+  color: white;
+}
+.sm-bttn:hover .fa-linkedin-in {
+  transform: scale(1.2);
+  color: white;
+}
+.sm-bttn:hover .fa-youtube {
+  transform: scale(1.3);
+  color: white;
+}
+.sm-bttn:hover .fa-instagram {
+  transform: scale(1.3);
+  color: white;
+}
+.sm-bttn:hover .fa-twitter {
+  transform: scale(1.3);
+  color: white;
+}
+
+.sm-bttn::before {
+  content: '';
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background-color: #009970;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+.sm-bttn:hover::before {
+  animation: sm-am 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+
+@keyframes sm-am {
+  0% {
+    top: 90%;
+    left: -110%;
+  }
+  50% {
+    top: -30%;
+    left: 10%;
+  }
+  100% {
+    top: -10%;
+    left: -10%;
+  }
+}
+/*Profile CSS ends*/
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+</style>
+
+<!---------------ADD.CSS FILE STARTS HERE---------------->
+
+<style>
+  /*navbar code*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
+.menu {
+  position: relative;
+  width: 90%;
+  z-index: 9999;
+}
+
+.my-navbar {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: white;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-item .nav-link {
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0px 10px;
+  position: relative;
+  color: black;
+}
+
+.nav-item .nav-link:before {
+  position: absolute;
+  left: 0;
+  content: '';
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background-color: #009970;
+  transition: 0.5s;
+}
+
+.nav-item .nav-link:hover:before {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+.navbar-brand {
+  text-transform: capitalize;
+  font-size: 35px;
+  color: #2f3542;
+  font-style: italic;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+}
+
+.navbar-scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 5px 20px;
+  transition: 0.5s;
+  animation: scroll 0.6s 1;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.nav-item .active {
+  color: #009970;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: #009970;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar {
+  padding: 0.8ren;
+  position: relative;
+  width: 100%;
+  z-index: 9999;
+}
+.navbar-nav li {
+  padding: 3px;
+}
+
+.nav-link {
+  font-size: 1.2em !important;
+}
+.nav-link li:hover {
+  background-color: black;
+}
+
+.nav-item .nav-link:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  transition: 0.5s;
+  content: '';
+  transform-origin: left;
+  background-color: white;
+}
+.nav-item .nav-link:hover after {
+  transform-origin: right;
+  transform: scaleX(1);
+}
+
+.navbar-scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0px 20px;
+  transition: 0.5s;
+  animation: scroll 0.6s 1;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.navbar-brand {
+  text-transform: capitalize;
+  font-size: 35px;
+  color: black;
+}
+
+/*navbar code*/
+
+/* ALL.CSS FILE STARTS HERE*/
+
+
+</style>
+
+</head>
+
+<body>
+
+<!--navigation bar-->
+<div class="container-fluid menu">
+        <nav class="navbar navbar-expand-lg my-navbar">
+            <a class="navbar-brand " href="#"><img src="https://i.postimg.cc/xCnvrRpg/logo20.jpg" height="50" width='250' alt="" loading="lazy"></a>
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/FrontEnd/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/Frontend/aboutus.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Frontend/events.html" class="nav-link">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/FrontEnd/Donation.html" class="nav-link">Donation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/FrontEnd/donationperks.html" class="nav-link ">Donation Perks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/FrontEnd/NGOlist.html" class="nav-link">NGO list</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/login" class="nav-link">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+</div>
+<!--nav bar end-->
+
+
+<!--cover image-->
+<div class="about-cover-img">
+</div>
+<!--cover image end-->
+
+
+<!--About us heading text-->    
+<section class="text-center">
+        <div class="about">
+            <h2>ABOUT US<hr class="green-hr"></h2>
+        </div>
+</section>
+<!--About us heading text end-->
+
+
+<!--green CARDS-->
+<section class="about section-bg">
+    <div class="container">
+
+      <div class="row ">
+
+        <div class="col-md-4 col-sm-6 col-xs-12 "  >
+            <div class="about-wrap text-center" >
+              <div class="icon-box" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="100">
+                <h4><a>Mission<hr class="white-hr"></a></h4>
+                <p style='margin-bottom: 58px;' class="threeboxes">Our mission is to build a website for the unfrequented or less known NGOs, which will act like an umbrella for them and help them in recognition, let it be in terms of funds, human resources or even management with complete transparency.  Our objectives include in creating a user-friendly website to create awareness among people, upliftment of the NGOs working on a smaller scale by means of our website.</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12 ">
+            <div class="about-wrap">
+              <div class="icon-box" data-aos="zoom-in"  data-aos-easing="ease-in-sine" data-aos-delay="100">
+                <h4><a>Vision<hr class="white-hr"></a></h4>
+                <p style='text-align: left;padding-left: 10px;'>
+                  • Transparency<br>
+                  • Respect for human rights<br>
+                  • Integrity<br>
+                  • Effective events for upliftment of NGOs<br>
+                  • No personal benefit<br>
+                  • Secular in our mindsets<br>
+                  • Non-Political working<br>
+                  • Non-religious propaganda<br>
+                  • Promoting social service<br>
+                  • Welfare of the society<br>
+                  </p>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 ">
+            <div class="about-wrap text-center">
+              <div class="icon-box" data-aos="fade-left"  data-aos-easing="ease-in-sine" data-aos-delay="100">
+                <h4><a>Inspiration<hr class="white-hr"></a></h4>
+                <p>Non-governmental Organizations have witnessed substantial growth over the past 2 decades in India.  Nevertheless, many NGOs are still oscillating between states of being financially independent and stable to scarcely surviving and are on the verge of going bankrupt. Although there are more than 147315 NGOs established so far in India, hunger and poverty persist. This inspired us to create a website, which would not only help the NGO’s survive but also would promote social service. </p>
+              </div>
+            </div>
+        </div>
+          </div>
+        </div>
+</section>
+<!--green CARDS  end-->
+
+
+<!--Our approach (our working) section-->
+<section class="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="section-title" data-aos="fade-right"  data-aos-easing="ease-in-sine" data-aos-delay="100">
+          <h2>Our approach</h2>
+          <h4>Our Working</h4>
+        </div>
+      </div>
+      <div class="col-lg-8 justify-content-center" data-aos="fade-left"  data-aos-easing="ease-in-sine" data-aos-delay="100">
+        <p class="Ourwork">All the NGO’s listed on the website would be genuine where the user would get back all the details of where his/her donated funds are being used by the NGO. Along with this there would be donation perks. Transparency is the prime feature. The funds collected would be utilized where the deprived people can make use of it. The second highlight of Beyond Kind is the events/a	ctivities. At times there are people who doubt the authenticity of the NGO’s. Such people can donate to a particular event instead of directly donating to NGO. Events would be organized in accordance with NGO’s where people can donate only to the event and volunteer for it and be a part of the event.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Our approach (our working) section end-->
+
+
+<!--Beyond Kind Team Section-->
+<section class="bg-light">
+        <div class="about text-center">
+            <h2 class="mb-5">Beyond Kind Team<hr class="green-hr"></h2>
+        </div>
+        <div class="carousel container-fulid " data-flickity='{ "wrapAround": true ,"autoPlay": 1500 }'>
+            <div class="carousel-cell " data-aos="zoom-in" data-aos-easing="ease-in-sine" data-aos-delay="100">
+                <div class="about-flip-card container-fluid">
+                    <div class="about-flip-card-inner">
+                      <div class="about-flip-card-front">
+                        <img src="https://i.postimg.cc/vHRw92Tc/Atharva-Suryavanshi.jpg" alt="Atharva Suryavanshi" class='img-fluid'style="width:300px;height:350px;">
+                        <h4 class="about-name">Atharva Suryavanshi</h4>
+                        <h6>HEAD COORDINATOR & CO FOUNDER</h6>
+                      </div>
+                      <div class="about-flip-card-back">
+                        <p>Atharva is a very hard working and resolute personality who is currently graduating from Fr. Conceicao Rodrigues Institute of Technology, Vashi. Also, he has aimed at providing social service to this nation and is taking many steps to implement the same. Currently he is aiming at completing his education and then integratings computer science with social welfare.</p><hr class="green-hr">
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <!--Atharva Suryavanshi card-->
+            <div class="carousel-cell" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-delay="100">
+                <div class="about-flip-card container-fluid">
+                    <div class="about-flip-card-inner">
+                      <div class="about-flip-card-front">
+                        <img src="https://i.postimg.cc/qqsb2LD3/Nidhi-Shrivastav.jpg" class='img-fluid' alt="Nidhi Shrivastav" style="width:300px;height:350px;">
+                        <h4 class="about-name">Nidhi Shrivastav</h4>
+                        <h6>COORDINATOR & CO FOUNDER</h6>
+                      </div>
+                      <div class="about-flip-card-back">
+                        <p>Nidhi Shrivastav is a goal-oriented, determined, and an ambitious person who is currently pursuing her Computer Science Under Graduate Degree from Fr. Conceicao Rodrigues Institute of Technology, Vashi. In addition to this, she is an active member of a social service cell and is keen to help the underprivileged. Always prepared for assisting the deprived, Nidhi has a she has a zeal to learn new things and is passionate about Developing a Career in Computer Engineering.
+                            </p><hr class="green-hr">
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="carousel-cell" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-delay="100">
+              <div class="about-flip-card container-fluid">
+                  <div class="about-flip-card-inner">
+                    <div class="about-flip-card-front">
+                      <img src="https://fcrit.ac.in/cdn/faculty/1521197268-dakshayni1.jpg_160.jpg" class='img-fluid' alt="Dakshayni G" style="width:300px;height:350px;">
+                      <h4 class="about-name">Mrs. Dakshayni G.</h4>
+                      <h6>Team Guide</h6>
+                    </div>
+                    <div class="about-flip-card-back">
+                      <p>Mrs. Dakshayni G. , Assistant professor in Computer Department at Fr.C. Rodrigues Institute of Technology, Vashi.
+                          </p><hr class="green-hr">
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div class="carousel-cell" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-delay="100">
+            <div class="about-flip-card container-fluid">
+                <div class="about-flip-card-inner">
+                  <div class="about-flip-card-front">
+                    <img src="https://i.postimg.cc/pT8qtCH6/Ojas-Mhatre.jpg" class='img-fluid' alt="Ojas Mhatre" style="width:300px;height:350px;">
+                    <h4 class="about-name">Ojas Mhatre</h4>
+                    <h6>MEDIA , GRAPHICS & CONTENT HEAD</h6>
+                  </div>
+                  <div class="about-flip-card-back">
+                    <p>Ojas Mhatre is a talented, hardworking, and time-conscious person currently pursuing his Computer Science Under Graduate Degree from Fr. Conceicao Rodrigues Institute of Technology, Vashi. He is always ready to volunteer for social service and is also a good teacher to those in need of knowledge.  He is a dendrophile and has been contributing to tree plantation for a few years. He is always ready to volunteer for social service and is also a good teacher to those ones in need of knowledge. Ojas, Has always been trying to reach excellence in various fields and aims to keep learning new things along with becoming an inspiration in the Computer Science community.
+                        </p><hr class="green-hr">
+                  </div>
+                </div>
+              </div>
+            </div>
+         </div>
+</section>
+<!--Beyond Kind Team Section End-->
+
+<!--footer-->
+
+<button onclick="topFunction()" id = "topbtn" ><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+<!-- Optional JavaScript -->    
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+<!-- navbar animation -->
+<script>
+  $(document).ready(function () {
+      $(window).scroll(function () {
+          if ($(window).scrollTop() > 60) {
+              $('.my-navbar').addClass('navbar-scroll');
+          }
+          else {
+              $('.my-navbar').removeClass('navbar-scroll');
+          }
+      });
+  });
+
+</script>
+<!--bottom to top button-->
+<script type="text/javascript">
+      myButton = document.getElementById("topbtn");
+      window.onscroll = function() {scrollfunction()};
+      function scrollfunction() {
+        if(document.body.scrollTop  > 40 || document.documentElement.scrollTop > 40) {
+          myButton.style.display = "Block";
+        } else {
+          myButton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>    
+
+<!--Animation on scroll (Aos) link and script-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+
+<!--flickity js link-->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</script>
+    
+
+</body>
+
+</html>

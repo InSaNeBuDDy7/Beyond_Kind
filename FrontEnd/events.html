@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  
+  <!--aos link-->
+  <link rel="stylesheet" type="text/css" href="aos/aos.css">
+
+  <title>Beyond Kind - EVENTS (Page-1)</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image" href="https://i.postimg.cc/xCnvrRpg/logo20.jpg" sizes="192x192" />
+
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- custom add-ons -->
+  <link rel="stylesheet" type="text/css" href="add.css">
+  <script src="owl.carousel/owl.carousel.min.js"></script>
+  <link href="boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+
+
+  <!---------------STYLE.CSS STARTS HERE--------------->
+
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    body {
+      width: 100%;
+    }
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    color: #222;
+  }
+  /* utility class*/
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Raleway', sans-serif;
+  }
+  body {
+    font-family: 'Open Sans', sans-serif;
+    color: #444444;
+  }
+  
+  a {
+    color: #009970;
+  }
+  
+  a:hover {
+    color: #009970;
+    text-decoration: none;
+  }
+  /*------------------top button css---------------------------*/
+  #topbtn {
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          right: 30px;
+          z-index: 99;
+          border: 1px solid #009970;
+          outline: none;
+          background-color: white ;
+          color: #009970;
+          cursor: pointer;
+          border-radius: 50%;
+          font-size: 18px;
+        }
+        #topbtn:hover{
+          background-color: #009970;
+          color: #fff;
+        }
+  /*------------- ABout us page css ---------------------*/
+  /*header image*/
+  
+  #header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url('https://images.unsplash.com/photo-1542810634-71277d95dcbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-position: center;
+    background-size: cover;
+  }
+  .header-box {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  .header-box h1 {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+  }
+  /*smoothing scroll */
+  * {
+    scroll-behavior: smooth;
+  }
+  
+  /*scroll bar effect*/
+  ::-webkit-scrollbar {
+    width: 12px;
+    background: #f6f6f7;
+    border-radius: 10px;
+    border: 1px solid white;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #009970;
+  }
+  
+  /*about us cover */
+  .about-cover-img {
+    height: 750px;
+    background-image: url("https://images.unsplash.com/photo-1542810634-71277d95dcbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  /*about us heading text*/
+  .about h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+  }
+  .green-hr {
+    width: 50px;
+    display: block;
+    height: 2px;
+    background: #009970;
+  }
+  
+  /*green cards  */
+  .about .icon-box {
+    text-align: center;
+    padding: 40px 20px;
+    transition: all ease-in-out 0.3s;
+    background: #009970;
+  }
+  
+  .about .icon-box h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  
+  .about .icon-box h4 a {
+    color: #fff;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .white-hr {
+    width: 50px;
+    display: block;
+    height: 2px;
+    background: #fff;
+  }
+  
+  .about .icon-box p {
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  .about .icon-box:hover {
+    border-color: #009970;
+    box-shadow: 0px 0 25px 0 black;
+  }
+  
+  .about .icon-box:hover h4 a {
+    color: #fff;
+  }
+  
+  .carousel-cell {
+    width: 100%; /* full width */
+    height: 450px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    /* half-width cells for larger devices */
+    .carousel-cell {
+      width: 33%;
+    }
+  }
+  .about-name {
+    padding-top: 10px;
+  }
+  
+  /*flip card part*/
+  
+  .about-flip-card {
+    perspective: 1000px;
+    border-radius: 10px;
+    display: flex;
+  }
+  
+  .about-flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid #009970;
+    background-color: #009970;
+  }
+  
+  .about-flip-card:hover .about-flip-card-inner {
+    cursor: pointer;
+    transform: rotateY(180deg);
+  }
+  
+  .about-flip-card-front,
+  .about-flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .about-flip-card-front {
+    font-variant: small-caps;
+    color: black;
+  }
+  
+  .about-flip-card-back {
+    color: black;
+    transform: rotateY(180deg);
+    padding: 10px;
+    text-align: justify;
+    font-variant: small-caps;
+  }
+  
+  [class*='col-'] {
+    padding: 1rem;
+  }
+  
+  /*------------- ABout us page css end---------------------*/
+  /* ----------------------------------------------------------------------------------------------------------------- */
+  /*--------------------------Donation page css-----------*/
+  
+  /*Donation cover */
+  .donation-head{
+    background-color: beige;
+  }
+  .donation h2 {
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+  }
+  .donation {
+    width: 60px;
+    display: block;
+    height: 2px;
+    background: #009970;
+  }
+  
+  /*form part*/
+  #internshipform{
+    width: 350px;
+  }
+  
+  
+  .donation label {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .donation input,
+  #donation-option,
+  .donation textarea {
+    border: 1px solid #000;
+    background-color: gainsboro;
+  }
+  /*resume upload button style*/
+  .donation input[type='file']::-webkit-file-upload-button {
+    font-size: small;
+    color: #009970;
+    font-weight: bold;
+    background-color: white;
+    border:1px solid #009970;
+    border-radius: 5px;
+  }
+  .donation input[type='file']::-ms-browse  {
+    font-size: small;
+    color: #009970;
+    font-weight: bold;
+    background-color: white;
+    border:1px solid #009970;
+    border-radius: 5px;
+  }
+  .donation input[type='file']::-webkit-file-upload-button:hover {
+    color: white;
+    background-color:#009970;
+  }
+  .donation input:focus,
+  #donation-option:focus,
+  .donation textarea:focus {
+    box-shadow: 2px 2px 2px 2px #009970 !important ;
+  }
+  .donation button {
+    border-color: #009970 !important ;
+    color: #009970 !important;
+    font-weight: bold;
+  }
+  .donation button:hover {
+    background-color: #009970 !important ;
+    color: #fff !important;
+  }
+  
+  /*--------------------------Donation page css end-----------*/
+  
+  /* Donation Perks css start*/
+  .cover-img {
+    height: 750px;
+    background-image: url(images/main.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  .img {
+    width: 100%;
+    height: 50%;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .carousel-caption h1 {
+    font-size: 250%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px #000;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 200%;
+    font-weight: 100;
+    text-shadow: 1px 1px 10px #000;
+    padding-bottom: 1rem;
+  }
+  
+  .btn {
+    font-size: 90%;
+  }
+  
+  .btn-primary {
+    background-color: #009970;
+    border: 1px solid #009970;
+  }
+  
+  .btn-primary:hover {
+    background-color: #ffff;
+    border: 1px solid #009970;
+    color: #009970;
+  }
+  
+  .jumbotron {
+    padding: 1rem;
+    border-radius: 0;
+  }
+  
+  .welcome {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+  
+  .welcome hr {
+    border-top: 2px solid #b4b4b4;
+    width: 95%;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .fa-money {
+    color: red;
+  }
+  .fa-university {
+    color: #562d7c;
+  }
+  .fa-times {
+    color: #2163af;
+  }
+  .fa-money,
+  .fa-university,
+  .fa-times {
+    font-size: 4em;
+    margin: 1rem;
+  }
+  
+  .fun {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .gif {
+    max-width: 100%;
+  }
+  
+  .img1 {
+    width: 330px;
+    padding: 10px;
+    filter: grayscale(0);
+    transition: 1s;
+    display: inline-block;
+  }
+  .img1:hover {
+    opacity: 0.5;
+  }
+  
+  .content {
+    position: absolute;
+    font-size: 0px;
+    top: 45%;
+    left: 50%;
+  }
+  
+  .content btn2 {
+    position: absolute;
+    padding: 10px 10px;
+    display: block;
+  }
+  .content span:nth-child(4) {
+    top: 0;
+    left: -50%;
+    width: 50%;
+    height: 1pxl;
+    background: linear-gradient(90deg, trasparent, black);
+  }
+  .content:hover span:nth-child(4) {
+    left: 50%;
+    transition: 1s;
+  }
+  
+  .anim:hover > .content {
+    font-size: 30px;
+    font-family: unset;
+    text-align: center;
+    padding: 10px 10px;
+    top: 35%;
+    left: 34%;
+    display: block;
+    position: absolute;
+    color: white;
+    background: black;
+    box-shadow: 0 0 10px black, 0 0 40px black, 0 0 80px black;
+    transition: 1s;
+  }
+  
+  .anim:hover > .content btn2 {
+    font-size: 10px;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .card-img-top1 {
+    height: 165px;
+  }
+  section {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  .section-bg {
+    background-color: #f6f6f7;
+  }
+  
+  .section-title {
+    padding-bottom: 30px;
+    
+  }
+  
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+  .section-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #009970;
+    bottom: 0;
+    left: 0;
+  }
+  .section-title-new h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #009970;
+    bottom: 0;
+    left: 511px;
+  }
+  
+  
+  .section-title p {
+    margin-bottom: 0;
+  }
+  
+  .services .icon-box {
+    text-align: center;
+    padding: 40px 20px;
+    transition: all ease-in-out 0.3s;
+    background: #fff;
+  }
+  
+  .services .icon-box .icon {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    border-radius: 50px;
+    border: 1px solid #009970;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: ease-in-out 0.3s;
+    color: #009970;
+  }
+  
+  .services .icon-box .icon i {
+    font-size: 28px;
+  }
+  
+  .services .icon-box h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  
+  .services .icon-box h4 a {
+    color: #36343a;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .services .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  .services .icon-box:hover {
+    border-color: #fff;
+    box-shadow: 0px 0 20px 0 rgba(0, 0, 0, 0.9);
+  }
+  
+  .services .icon-box:hover h4 a {
+    color: #009970;
+  }
+  
+  .services .icon-box:hover .icon {
+    color: #fff;
+    background: #009970;
+  }
+  
+  hr.light {
+    border-top: 1px solid white;
+    width: 75%;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* donation css ends */
+  hr.light-100 {
+    border-top: 1px solid white;
+    width: 100%;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .carousel-item {
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.4s ease, -webkit-transform 0.5s ease;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+  }
+  
+  figure {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin: 0 !important;
+  }
+  
+  /* Donation Perks css ends */
+  /* ----------------------------------------------------------------------------------------------------------------- */
+  /*---------------NGO list css----------------------*/
+  .donate-btn{
+    border-color: #009970 !important ;
+    color: white !important;
+    font-weight: bold;
+    background-color: #009970;
+  }
+  
+  .donate-btn:hover {
+    background-color: white !important ;
+    color: #009970 !important;
+  }
+  /*donation form part*/
+  .donation form{
+    width: 350px;
+  }
+  .donation .container{
+    box-shadow: 10px 20px 20px #777777;
+  }
+  .donation h4 {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+  }
+  .donation-green-hr {
+    width: 20%;
+    display: block;
+    height: 2px;
+    background: #009970;
+  }
+  .donation label {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .donation input,
+  #donation-option
+  {
+    border: 1px solid #000;
+    background-color: gainsboro;
+  }
+  
+  .donation input:focus,
+  #donation-option:focus{
+    box-shadow: 2px 2px 2px 2px #009970 !important ;
+  }
+  .donation button {
+    border-color: #009970 !important ;
+    color: #009970 !important;
+    font-weight: bold;
+  }
+  .donation button:hover {
+    background-color: #009970 !important ;
+    color: #fff !important;
+  }
+  /*---------------ngo list css end---------*/
+  
+  /*Profile page css*/
+  /*details part*/
+  .contact h2 {
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+  }
+  .contact-green-hr {
+    width: 60px;
+    display: block;
+    height: 2px;
+    background: #009970;
+  }
+  .contact a {
+    color: #009970;
+    font-weight: bold;
+  }
+  .contact-h4 {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+  }
+  .line {
+    border: 1.2px solid #000;
+  }
+  /*form part*/
+  .contact label {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .contact input,
+  .contact textarea {
+    border: 1px solid #000;
+    background-color: gainsboro;
+  }
+  
+  .contact input:focus,
+  .contact textarea:focus {
+    box-shadow: 2px 2px 2px 2px #009970 !important ;
+  }
+  .contact button {
+    border-color: #009970 !important ;
+    color: #009970 !important;
+    font-weight: bold;
+  }
+  .contact button:hover {
+    background-color: #009970 !important ;
+    color: #fff !important;
+  }
+  /*social media part*/
+  .social-icon {
+    font-size: 3.2em;
+    text-align: center;
+  }
+  
+  .sm-bttn {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    overflow: hidden;
+    position: relative;
+  }
+  .sm-bttn i {
+    line-height: 90px;
+    font-size: 24px;
+    transition: 0.2s linear;
+  }
+  
+  .sm-bttn:hover .fa-facebook-f {
+    transform: scale(1.3);
+    color: white;
+  }
+  .sm-bttn:hover .fa-linkedin-in {
+    transform: scale(1.2);
+    color: white;
+  }
+  .sm-bttn:hover .fa-youtube {
+    transform: scale(1.3);
+    color: white;
+  }
+  .sm-bttn:hover .fa-instagram {
+    transform: scale(1.3);
+    color: white;
+  }
+  .sm-bttn:hover .fa-twitter {
+    transform: scale(1.3);
+    color: white;
+  }
+  
+  .sm-bttn::before {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background-color: #009970;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+  }
+  
+  .sm-bttn:hover::before {
+    animation: sm-am 0.7s 1;
+    top: -10%;
+    left: -10%;
+  }
+  
+  @keyframes sm-am {
+    0% {
+      top: 90%;
+      left: -110%;
+    }
+    50% {
+      top: -30%;
+      left: 10%;
+    }
+    100% {
+      top: -10%;
+      left: -10%;
+    }
+  }
+  /*Profile CSS ends*/
+  /* ----------------------------------------------------------------------------------------------------------------- */
+  
+  </style>
+  
+  <!---------------ADD.CSS FILE STARTS HERE---------------->
+  
+  <style>
+    /*navbar code*/
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
+  .menu {
+    position: relative;
+    width: 90%;
+    z-index: 9999;
+  }
+  
+  .my-navbar {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: white;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nav-item .nav-link {
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0px 10px;
+    position: relative;
+    color: black;
+  }
+  
+  .nav-item .nav-link:before {
+    position: absolute;
+    left: 0;
+    content: '';
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background-color: #009970;
+    transition: 0.5s;
+  }
+  
+  .nav-item .nav-link:hover:before {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+  .navbar-brand {
+    text-transform: capitalize;
+    font-size: 35px;
+    color: #2f3542;
+    font-style: italic;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+  }
+  
+  .navbar-scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px 20px;
+    transition: 0.5s;
+    animation: scroll 0.6s 1;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  
+  .nav-item .active {
+    color: #009970;
+  }
+  
+  .custom-toggler.navbar-toggler {
+    border-color: #009970;
+  }
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+  .navbar {
+    padding: 0.8ren;
+    position: relative;
+    width: 100%;
+    z-index: 9999;
+  }
+  .navbar-nav li {
+    padding: 3px;
+  }
+  
+  .nav-link {
+    font-size: 1.2em !important;
+  }
+  .nav-link li:hover {
+    background-color: black;
+  }
+  
+  .nav-item .nav-link:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transition: 0.5s;
+    content: '';
+    transform-origin: left;
+    background-color: white;
+  }
+  .nav-item .nav-link:hover after {
+    transform-origin: right;
+    transform: scaleX(1);
+  }
+  
+  .navbar-scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0px 20px;
+    transition: 0.5s;
+    animation: scroll 0.6s 1;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  .navbar-brand {
+    text-transform: capitalize;
+    font-size: 35px;
+    color: black;
+  }
+  
+  /*navbar code*/
+  </style>
+</head>
+
+<body>
+
+  <!------navigation------->
+  <div class="container-fluid menu">
+    <nav class="navbar navbar-expand-lg my-navbar">
+      <a class="navbar-brand " href="#"><img src="https://i.postimg.cc/xCnvrRpg/logo20.jpg" height="50" width='250' alt="" loading="lazy"></a>
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/FrontEnd/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Frontend/aboutus.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a href="/Frontend/events.html" class="nav-link active">Events</a>
+          </li>
+          <li class="nav-item">
+            <a href="/FrontEnd/Donation.html" class="nav-link">Donation</a>
+          </li>
+          <li class="nav-item">
+            <a href="/FrontEnd/donationperks.html" class="nav-link">Donation Perks</a>
+          </li>
+          <li class="nav-item">
+            <a href="/FrontEnd/NGOlist.html" class="nav-link">NGO list</a>
+          </li>
+          <li class="nav-item">
+            <a href="/login" class="nav-link">Log Out</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!------end_navigation-->
+
+  <!--cover image-->
+<div class="about-cover-img">
+</div>
+<!--cover image end-->
+
+  <!---main_body-->
+  <section>
+    <div class="container py-4 my-4 bg-light" style="box-shadow: 5px 5px 5px 5px #777;">
+      <div class="about text-center">
+        <h2 class="mb-5">EVENTS<hr class="green-hr"></h2>
+    </div>
+    <hr>
+    <!--project 1-->
+    <div class="row justify-content-start">
+      <div class="col-md-5" data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom">
+        <img src="https://i0.wp.com/aksharacentre.org/wp-content/uploads/2019/02/8.jpg?w=960&ssl=1" class="img-fluid" alt="project 1">
+      </div>
+      <div class="col-md-7 pt-4" data-aos="fade-left">
+        <h2>Daan Utsav</h2>
+        <h4><b><a href="#">Donation to the needy </a> / <a href="#"> By Akshara Centre </a></b></h4>
+        <p class="font-italic">
+          Empowering the needy, the selfless act of giving to the under-privileged sections of society and contributing towards their social upliftment is an essential humane act. An individual and collective responsibility for us all. ‘The Joy of Giving Week’ (JGW) by ‘Daan Utsav’- the “festival of philanthropy”, aims at such acts of lending money, time, resources & skills, covering NGOS, corporates, schools, colleges and general public pan-India.The program is extensively publicized to ensure it reaches its desired demographic.
+        </p>
+        <a class="btn btn-primary" href="https://aksharacentre.org/daan-utsav-at-akshara/" target="_blank" role="button">Read More »</a>
+      </div>
+    </div>
+    <hr>
+    <!--event 2-->
+    <div class="row justify-content-start">
+      <div class="col-md-7 pt-4" data-aos="fade-left">
+        <h2>Be aware India</h2>
+        <h4><b><a href="#">Leprosy Education and rehabilitation </a> / <a href="#"> By Alert India </a></b></h4>
+        <p class="font-italic">
+          various types of deformities are corrected and protected with aids and appliances. For patients with early deformities, services like muscle stimulation, pre-fabricated splints, and special MCR (micro cellular rubber) footwear are produced and supplied at concessional rates.A special sponsorship programme assists the education of the children affected by leprosy and children of leprosy patients.
+
+        </p>
+        <a class="btn btn-primary" href="https://www.giveindia.org/nonprofit/alert-india-association-for-leprosy-education-rehabilitation-treatment-india" target="_blank" role="button">Read More »</a>
+      </div>
+      <div class="col-md-5" data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom">
+        <img src="https://images.unsplash.com/photo-1607454230973-e19abb3fa2bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGNoaWxkZXJuJTIwd2l0aCUyMG1vdGhlciUyMGluJTIwcnVyYWwlMjBhcmVhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" class="img-fluid" alt="event 2">
+      </div>
+    </div>
+    <hr>
+    <!--Event 3-->
+    <div class="row justify-content-start">
+      <div class="col-md-5" data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom">
+        <img src="data:image/jpeg;base64,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" class="img-fluid" alt="Event 3">
+      </div>
+      <div class="col-md-7 pt-4" data-aos="fade-left">
+        <h2>Fight against cancer</h2>
+        <h4><b><a href="#">Cancer awareness </a> / <a href="#"> By ICS </a></b></h4>
+        <p class="font-italic">The Indian Cancer Society (ICS) was established as India's first voluntary, non-profit, National Organization for Awareness, Detection, Cure, and Survivorship of those affected with cancer. Aimed at providing end-to-end cancer support, their projects indulge in encouraging awareness of prevention and curability of Cancer, facilitating early detection and offering emotional support and medical aid to patients.
+        </p>
+        <a class="btn btn-primary" href="https://www.giveindia.org/nonprofit/indian-cancer-society" target="_blank" role="button">Read More »</a>
+      </div>
+    </div>
+    <hr>
+        <!--pagination-->
+        <div class="row justify-content-between mx-4">
+          <div class="col text-left ">
+            <a href="#" class="pr-2" style="color: #777; pointer-events: none;">1</a>
+            <a href="./events-2.html">2</a>
+          </div class="col">
+          <div><a href="./events-2.html">Next Page <i class="fa fa-arrow-right" aria-hidden="true"></i></a></div>
+        </div>
+     
+  </div>
+  </section>
+  <!--main_body_end-->
+  <!---------footer---------->
+ 
+<button onclick="topFunction()" id = "topbtn" ><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+  
+
+  <!-- navbar animation -->
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 60) {
+          $('.my-navbar').addClass('navbar-scroll');
+        } else {
+          $('.my-navbar').removeClass('navbar-scroll');
+        }
+      });
+    });
+  </script>
+   <script type="text/javascript">
+      myButton = document.getElementById("topbtn");
+      window.onscroll = function() {scrollfunction()};
+      function scrollfunction() {
+        if(document.body.scrollTop  > 40 || document.documentElement.scrollTop > 40) {
+          myButton.style.display = "Block";
+        } else {
+          myButton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  
+
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script src="aos/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
